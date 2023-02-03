@@ -1,0 +1,15 @@
+{
+    "name": "patentes/guaranda",
+    "description": "Es un sistema para manejar",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "dev-NumberFormatMask-Helpers"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

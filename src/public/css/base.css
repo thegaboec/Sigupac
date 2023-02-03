@@ -1,0 +1,17 @@
+
+:root {
+    --color-primary: #18478f;
+    --color-secondary: #d52228;
+    --color-altern-one: #f7921e;
+    --color-altern-two: #6b3589;
+    --color-altern-three: #f9d503;
+    --color-altern-four: #43a967;
+    --color-altern-five: #3eb5cb;
+    
+    --color-secondary-variant: #ba1f2d;
+    --color-altern-two-variant: #4d236d;
+    --color-altern-three-variant: #edc613;
+    --color-altern-five-variant: #3a86a6;
+    
+    --color-bg-header: #f7f7f7;
+}

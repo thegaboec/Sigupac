@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/src/public/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/src/public/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/src/public/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/src/public/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/src/public/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/src/public/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/src/public/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/src/public/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/public/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/src/public/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/public/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/src/public/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/public/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/src/public/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+    <link rel="stylesheet" href="/src/public/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>%title%</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">
+                <img class="img-logo" src="% #(logo) %" alt="logo">
+            </div>
+            <div class="welcome % oculto % ">
+                Bienvenido %% name %%
+            </div>
+            <nav>
+                <ul>
+                    <a href="/"><li><span class="material-icons">&#xe88a;</span> Inicio</li></a>
+                    <a href="/admin/login" class="%cam%" ><li> <span class="material-icons ">&#xea77;</span> Inicio Sesión</li></a>
+                    <a href="/documentation/api"><li><span class="material-icons">&#xe873;</span> Documentación </li></a>
+                    <div href="#" class="% oculto % menu % alternar .admin %">
+                        <li> <span class="material-icons">&#xe8b8;</span> Opciones</li> 
+                        <nav class="menu-desplegable">
+                            <li class=""><span class="material-icons">&#xf8e4;</span> Personal
+                                <nav class="lateral interno-final">
+                                    <li class=""><span class="material-icons">&#xea21;</span> Agentes
+                                        <nav class="lateral interno">
+                                           <div> <a href="/agregar/agentes-municipales"><li><span class="material-icons">&#xe7f0;</span> Agregar Agente</li></a> </div>
+                                           <div><a href="/list/agentes"><li><span class="material-icons">&#xe267;</span> Listar Agentes</li></a></div> 
+                                           <div><a href="/baja/agentes"><li><span class="material-icons">&#xef67;</span> Habilitar/Deshabilitar Agente</li></a></div> 
+
+                                        </nav>
+                                    </li>
+                                    <li class=""><span class="material-icons">&#xe7ee;</span> Jefe de Planta 
+                                        <nav class="lateral interno">
+                                            <div> <a href="/add/personal-planta"><li><span class="material-icons">&#xe7fe;</span> Agregar Jefe de Planta</li></a> </div>
+                                            <div><a href="/baja/personal-planta"><li><span class="material-icons">&#xe9d4;</span> Habilitar/Deshabilitar Jefe de Planta</li></a></div> 
+                                         </nav>
+                                    </li>
+                                    </nav>                                    
+                                </li>
+
+
+                                <li class=""><span class="material-icons">&#xe864;</span> Respaldos
+                                    <nav class="lateral interno-final">            
+                                                <a href="/respaldos/db"><li><span class="material-icons">&#xef43;</span> Generar Respaldo</li></a>
+                                                <a href="/list/respaldos/db"><li><span class="material-icons">&#xf071;</span>Lista de Respaldos</li></a>
+                                        </nav>
+                                </li>
+                                <li class=""><span class="material-icons">&#xeb97;</span> Apariencia
+                                    <nav class="lateral interno-final">
+                                        <a href="/cambio/imagen"><li><span class="material-icons">&#xe3f4;</span> Cambiar Logo</li></a>
+                                        <!-- <a href="/"><li><span class="material-icons">&#xf071;</span></li></a> -->
+                                    </nav>
+                                </li>
+                                <a href="/cambio/clave"><li><span class="material-icons">&#xeade;</span>Cambir Contraseña</li></a>
+                            </nav>
+                        </div>
+                        <!-- --------------------------------------------------------- Menu del Jefe De Departamento---------------------------------------- -->
+                        <div href="#" class="% oculto % menu % alternar .planta %">
+                            <li> <span class="material-icons">&#xe8b8;</span> Opciones</li> 
+                            <nav class="menu-desplegable">
+                                <li class=""><span class="material-icons">&#xe8cd;</span> Consultas
+                                    <nav class="lateral interno-final">
+                                        <div> <a href="/list/locales-comerciales"><li><span class="material-icons">&#xe8d1;</span> Locales Comerciales</li></a> </div>
+                                    </nav>
+                                </li>
+                                <li class=""><span class="material-icons">&#xf071;</span> Generar Reporte
+                                    <nav class="lateral interno-final">
+                                        <div> <a href="/descarga/exel"><li><span class="material-icons">&#xea12;</span>Comercios (Excel)</li></a> </div>
+                                    </nav>
+                                </li>
+    
+    
+                                    <!-- <li class=""><span class="material-icons">&#xe864;</span> Respaldos
+                                        <nav class="lateral interno-final">            
+                                                    <a href="/respaldos/db"><li><span class="material-icons">&#xef43;</span> Generar Respaldo</li></a>
+                                                    <a href="/list/respaldos/db"><li><span class="material-icons">&#xf071;</span>Lista de Respaldos</li></a>
+                                            </nav>
+                                    </li> -->
+                                    
+                                    <a href="/cambio/clave"><li><span class="material-icons">&#xeade;</span>Cambiar Contraseña</li></a>
+                                </nav>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        <!-- ------------------------------------------------------------------------END----------------------------------------------------- -->
+                    <a href="/instructions/general"><li> <span class="material-icons">&#xe32c;</span> Aplicación Móvil</li></a>
+                    <a style="color: red;" href="/logout" class="% oculto %"><li> <span class="material-icons ">&#xe9ba;</span> Cerrar Sesión</li></a>
+
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+
+            %content%
+            
+        </main>
+        <footer class="footer">
+                &copy; Derechos reservados Muncipio Guaranda | 2022-2023
+        </footer>
+        
+    </div>
+    <script src="/src/public/js/main.js" type="module"></script>
+</body>
+</html>
